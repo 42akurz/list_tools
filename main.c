@@ -20,4 +20,6 @@ int	main(void)
 	}
 	printf("ORDERED LIST:\n");
 	ft_print_list(sorted);
+	ft_free_list(&sorted);
+	ft_free_list(&head);
 }

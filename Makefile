@@ -7,7 +7,7 @@ NAME = list
 RM = rm -f
 
 SOURCES = ./src/ft_addback.c ./src/ft_addfront.c ./src/ft_addorder.c ./src/ft_delelement.c \
-			./src/ft_print_list.c ./src/libft.c main.c 
+			./src/ft_print_list.c ./src/ft_free_list.c ./src/libft.c main.c 
 
 OBJECTS = $(SOURCES:.c=.o)
 

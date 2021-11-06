@@ -26,6 +26,9 @@ void	ft_delelement(t_list **head, char *str);
 /* prints a list */
 void	ft_print_list(t_list *head);
 
+/* frees the list */
+void	ft_free_list(t_list **head);
+
 /* requirded helpers from my libft */
 size_t	ft_strlen(const char *str);
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
