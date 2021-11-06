@@ -4,6 +4,7 @@ int	main(void)
 {
 	t_list	*head;
 	t_list	*sorted;
+	t_list	*temp;
 
 	head = NULL;
 	ft_addback(&head, "pie");
@@ -13,10 +14,11 @@ int	main(void)
 	ft_addback(&head, "sauce");
 	printf("UNORDERED LIST:\n");
 	ft_print_list(head);
-	while (head != NULL)
+	temp = head;
+	while (temp != NULL)
 	{
-		ft_addorder(&sorted, head->data);
-		head = head->next;
+		ft_addorder(&sorted, temp->data);
+		temp = temp->next;
 	}
 	printf("ORDERED LIST:\n");
 	ft_print_list(sorted);

@@ -40,7 +40,11 @@ void	ft_addorder(t_list **head, char *str)
 		if (ft_compare(temp1->data, str) >= 1)
 		{
 			if (temp1 == *head)
+			{
 				ft_addfront(head, str);
+				free(newNode->data);
+				free(newNode);
+			}
 			else
 			{
 				temp2->next = newNode;
@@ -52,5 +56,7 @@ void	ft_addorder(t_list **head, char *str)
 		temp1 = temp1->next;
 	}
 	ft_addback(head, str);
+	free(newNode->data);
+	free(newNode);
 	return ;
 }
